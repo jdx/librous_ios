@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153A6B4F1882586200D1DCB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B4E1882586200D1DCB4 /* Foundation.framework */; };
+		153A6B511882586200D1DCB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B501882586200D1DCB4 /* CoreGraphics.framework */; };
+		153A6B531882586200D1DCB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B521882586200D1DCB4 /* UIKit.framework */; };
+		153A6B591882586200D1DCB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153A6B571882586200D1DCB4 /* InfoPlist.strings */; };
+		153A6B5B1882586200D1DCB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 153A6B5A1882586200D1DCB4 /* main.m */; };
+		153A6B5F1882586200D1DCB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 153A6B5E1882586200D1DCB4 /* AppDelegate.m */; };
+		153A6B621882586200D1DCB4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153A6B601882586200D1DCB4 /* Main_iPhone.storyboard */; };
+		153A6B651882586200D1DCB4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153A6B631882586200D1DCB4 /* Main_iPad.storyboard */; };
+		153A6B681882586200D1DCB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153A6B671882586200D1DCB4 /* ViewController.m */; };
+		153A6B6A1882586200D1DCB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153A6B691882586200D1DCB4 /* Images.xcassets */; };
+		153A6B711882586200D1DCB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B701882586200D1DCB4 /* XCTest.framework */; };
+		153A6B721882586200D1DCB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B4E1882586200D1DCB4 /* Foundation.framework */; };
+		153A6B731882586200D1DCB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B521882586200D1DCB4 /* UIKit.framework */; };
+		153A6B7B1882586200D1DCB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153A6B791882586200D1DCB4 /* InfoPlist.strings */; };
+		153A6B7D1882586200D1DCB4 /* librousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153A6B7C1882586200D1DCB4 /* librousTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		153A6B741882586200D1DCB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 153A6B431882586200D1DCB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 153A6B4A1882586200D1DCB4;
+			remoteInfo = librous;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		153A6B4B1882586200D1DCB4 /* librous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = librous.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		153A6B4E1882586200D1DCB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		153A6B501882586200D1DCB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		153A6B521882586200D1DCB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		153A6B561882586200D1DCB4 /* librous-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "librous-Info.plist"; sourceTree = "<group>"; };
+		153A6B581882586200D1DCB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		153A6B5A1882586200D1DCB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		153A6B5C1882586200D1DCB4 /* librous-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "librous-Prefix.pch"; sourceTree = "<group>"; };
+		153A6B5D1882586200D1DCB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		153A6B5E1882586200D1DCB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		153A6B611882586200D1DCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		153A6B641882586200D1DCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		153A6B661882586200D1DCB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		153A6B671882586200D1DCB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		153A6B691882586200D1DCB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		153A6B6F1882586200D1DCB4 /* librousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = librousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		153A6B701882586200D1DCB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		153A6B781882586200D1DCB4 /* librousTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "librousTests-Info.plist"; sourceTree = "<group>"; };
+		153A6B7A1882586200D1DCB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		153A6B7C1882586200D1DCB4 /* librousTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = librousTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		153A6B481882586200D1DCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153A6B511882586200D1DCB4 /* CoreGraphics.framework in Frameworks */,
+				153A6B531882586200D1DCB4 /* UIKit.framework in Frameworks */,
+				153A6B4F1882586200D1DCB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153A6B6C1882586200D1DCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153A6B711882586200D1DCB4 /* XCTest.framework in Frameworks */,
+				153A6B731882586200D1DCB4 /* UIKit.framework in Frameworks */,
+				153A6B721882586200D1DCB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153A6B421882586200D1DCB4 = {
+			isa = PBXGroup;
+			children = (
+				153A6B541882586200D1DCB4 /* librous */,
+				153A6B761882586200D1DCB4 /* librousTests */,
+				153A6B4D1882586200D1DCB4 /* Frameworks */,
+				153A6B4C1882586200D1DCB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		153A6B4C1882586200D1DCB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				153A6B4B1882586200D1DCB4 /* librous.app */,
+				153A6B6F1882586200D1DCB4 /* librousTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		153A6B4D1882586200D1DCB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				153A6B4E1882586200D1DCB4 /* Foundation.framework */,
+				153A6B501882586200D1DCB4 /* CoreGraphics.framework */,
+				153A6B521882586200D1DCB4 /* UIKit.framework */,
+				153A6B701882586200D1DCB4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		153A6B541882586200D1DCB4 /* librous */ = {
+			isa = PBXGroup;
+			children = (
+				153A6B5D1882586200D1DCB4 /* AppDelegate.h */,
+				153A6B5E1882586200D1DCB4 /* AppDelegate.m */,
+				153A6B601882586200D1DCB4 /* Main_iPhone.storyboard */,
+				153A6B631882586200D1DCB4 /* Main_iPad.storyboard */,
+				153A6B661882586200D1DCB4 /* ViewController.h */,
+				153A6B671882586200D1DCB4 /* ViewController.m */,
+				153A6B691882586200D1DCB4 /* Images.xcassets */,
+				153A6B551882586200D1DCB4 /* Supporting Files */,
+			);
+			path = librous;
+			sourceTree = "<group>";
+		};
+		153A6B551882586200D1DCB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				153A6B561882586200D1DCB4 /* librous-Info.plist */,
+				153A6B571882586200D1DCB4 /* InfoPlist.strings */,
+				153A6B5A1882586200D1DCB4 /* main.m */,
+				153A6B5C1882586200D1DCB4 /* librous-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		153A6B761882586200D1DCB4 /* librousTests */ = {
+			isa = PBXGroup;
+			children = (
+				153A6B7C1882586200D1DCB4 /* librousTests.m */,
+				153A6B771882586200D1DCB4 /* Supporting Files */,
+			);
+			path = librousTests;
+			sourceTree = "<group>";
+		};
+		153A6B771882586200D1DCB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				153A6B781882586200D1DCB4 /* librousTests-Info.plist */,
+				153A6B791882586200D1DCB4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		153A6B4A1882586200D1DCB4 /* librous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153A6B801882586200D1DCB4 /* Build configuration list for PBXNativeTarget "librous" */;
+			buildPhases = (
+				153A6B471882586200D1DCB4 /* Sources */,
+				153A6B481882586200D1DCB4 /* Frameworks */,
+				153A6B491882586200D1DCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = librous;
+			productName = librous;
+			productReference = 153A6B4B1882586200D1DCB4 /* librous.app */;
+			productType = "com.apple.product-type.application";
+		};
+		153A6B6E1882586200D1DCB4 /* librousTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153A6B831882586200D1DCB4 /* Build configuration list for PBXNativeTarget "librousTests" */;
+			buildPhases = (
+				153A6B6B1882586200D1DCB4 /* Sources */,
+				153A6B6C1882586200D1DCB4 /* Frameworks */,
+				153A6B6D1882586200D1DCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				153A6B751882586200D1DCB4 /* PBXTargetDependency */,
+			);
+			name = librousTests;
+			productName = librousTests;
+			productReference = 153A6B6F1882586200D1DCB4 /* librousTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		153A6B431882586200D1DCB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dickeyxxx;
+				TargetAttributes = {
+					153A6B6E1882586200D1DCB4 = {
+						TestTargetID = 153A6B4A1882586200D1DCB4;
+					};
+				};
+			};
+			buildConfigurationList = 153A6B461882586200D1DCB4 /* Build configuration list for PBXProject "librous" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 153A6B421882586200D1DCB4;
+			productRefGroup = 153A6B4C1882586200D1DCB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				153A6B4A1882586200D1DCB4 /* librous */,
+				153A6B6E1882586200D1DCB4 /* librousTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		153A6B491882586200D1DCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153A6B651882586200D1DCB4 /* Main_iPad.storyboard in Resources */,
+				153A6B6A1882586200D1DCB4 /* Images.xcassets in Resources */,
+				153A6B621882586200D1DCB4 /* Main_iPhone.storyboard in Resources */,
+				153A6B591882586200D1DCB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153A6B6D1882586200D1DCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153A6B7B1882586200D1DCB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		153A6B471882586200D1DCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153A6B681882586200D1DCB4 /* ViewController.m in Sources */,
+				153A6B5F1882586200D1DCB4 /* AppDelegate.m in Sources */,
+				153A6B5B1882586200D1DCB4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153A6B6B1882586200D1DCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153A6B7D1882586200D1DCB4 /* librousTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		153A6B751882586200D1DCB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 153A6B4A1882586200D1DCB4 /* librous */;
+			targetProxy = 153A6B741882586200D1DCB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		153A6B571882586200D1DCB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153A6B581882586200D1DCB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		153A6B601882586200D1DCB4 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153A6B611882586200D1DCB4 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		153A6B631882586200D1DCB4 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153A6B641882586200D1DCB4 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		153A6B791882586200D1DCB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153A6B7A1882586200D1DCB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		153A6B7E1882586200D1DCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		153A6B7F1882586200D1DCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		153A6B811882586200D1DCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "librous/librous-Prefix.pch";
+				INFOPLIST_FILE = "librous/librous-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		153A6B821882586200D1DCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "librous/librous-Prefix.pch";
+				INFOPLIST_FILE = "librous/librous-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		153A6B841882586200D1DCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/librous.app/librous";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "librous/librous-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "librousTests/librousTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		153A6B851882586200D1DCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/librous.app/librous";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "librous/librous-Prefix.pch";
+				INFOPLIST_FILE = "librousTests/librousTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		153A6B461882586200D1DCB4 /* Build configuration list for PBXProject "librous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153A6B7E1882586200D1DCB4 /* Debug */,
+				153A6B7F1882586200D1DCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		153A6B801882586200D1DCB4 /* Build configuration list for PBXNativeTarget "librous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153A6B811882586200D1DCB4 /* Debug */,
+				153A6B821882586200D1DCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		153A6B831882586200D1DCB4 /* Build configuration list for PBXNativeTarget "librousTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153A6B841882586200D1DCB4 /* Debug */,
+				153A6B851882586200D1DCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 153A6B431882586200D1DCB4 /* Project object */;
+}
