@@ -17,7 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.label.text = @"foobar";
+    [[SessionManager sharedManager] GET:@"/"
+                             parameters:nil
+                                success:^(NSURLSessionDataTask *task, id responseObject) {
+                                    self.label.text = responseObject[0];
+                                } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                    NSLog(@"%@", error);
+                                }];
 }
 
 - (void)didReceiveMemoryWarning

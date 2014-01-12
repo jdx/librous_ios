@@ -22,6 +22,8 @@
 		153A6B731882586200D1DCB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B521882586200D1DCB4 /* UIKit.framework */; };
 		153A6B7B1882586200D1DCB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153A6B791882586200D1DCB4 /* InfoPlist.strings */; };
 		153A6B7D1882586200D1DCB4 /* librousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153A6B7C1882586200D1DCB4 /* librousTests.m */; };
+		155875431882599C001B1A01 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 155875421882599C001B1A01 /* SessionManager.m */; };
+		C09B660AF2874C6FBD00DB87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C4D657CC274071BF7DCD40 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B18042C5804AD28A39F4F0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		153A6B4B1882586200D1DCB4 /* librous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = librous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		153A6B4E1882586200D1DCB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		153A6B501882586200D1DCB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +58,9 @@
 		153A6B781882586200D1DCB4 /* librousTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "librousTests-Info.plist"; sourceTree = "<group>"; };
 		153A6B7A1882586200D1DCB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		153A6B7C1882586200D1DCB4 /* librousTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = librousTests.m; sourceTree = "<group>"; };
+		155875411882599C001B1A01 /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		155875421882599C001B1A01 /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		65C4D657CC274071BF7DCD40 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 				153A6B511882586200D1DCB4 /* CoreGraphics.framework in Frameworks */,
 				153A6B531882586200D1DCB4 /* UIKit.framework in Frameworks */,
 				153A6B4F1882586200D1DCB4 /* Foundation.framework in Frameworks */,
+				C09B660AF2874C6FBD00DB87 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,7 @@
 				153A6B761882586200D1DCB4 /* librousTests */,
 				153A6B4D1882586200D1DCB4 /* Frameworks */,
 				153A6B4C1882586200D1DCB4 /* Products */,
+				00B18042C5804AD28A39F4F0 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +115,7 @@
 				153A6B501882586200D1DCB4 /* CoreGraphics.framework */,
 				153A6B521882586200D1DCB4 /* UIKit.framework */,
 				153A6B701882586200D1DCB4 /* XCTest.framework */,
+				65C4D657CC274071BF7DCD40 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 				153A6B671882586200D1DCB4 /* ViewController.m */,
 				153A6B691882586200D1DCB4 /* Images.xcassets */,
 				153A6B551882586200D1DCB4 /* Supporting Files */,
+				155875411882599C001B1A01 /* SessionManager.h */,
+				155875421882599C001B1A01 /* SessionManager.m */,
 			);
 			path = librous;
 			sourceTree = "<group>";
@@ -162,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 153A6B801882586200D1DCB4 /* Build configuration list for PBXNativeTarget "librous" */;
 			buildPhases = (
+				0A8A4D22494F433BB6312A32 /* Check Pods Manifest.lock */,
 				153A6B471882586200D1DCB4 /* Sources */,
 				153A6B481882586200D1DCB4 /* Frameworks */,
 				153A6B491882586200D1DCB4 /* Resources */,
+				9DD1B1B7DE5441B297DD8812 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +261,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A8A4D22494F433BB6312A32 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD1B1B7DE5441B297DD8812 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		153A6B471882586200D1DCB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,6 +301,7 @@
 			files = (
 				153A6B681882586200D1DCB4 /* ViewController.m in Sources */,
 				153A6B5F1882586200D1DCB4 /* AppDelegate.m in Sources */,
+				155875431882599C001B1A01 /* SessionManager.m in Sources */,
 				153A6B5B1882586200D1DCB4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +436,7 @@
 		};
 		153A6B811882586200D1DCB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B18042C5804AD28A39F4F0 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +450,7 @@
 		};
 		153A6B821882586200D1DCB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B18042C5804AD28A39F4F0 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -474,6 +523,7 @@
 				153A6B821882586200D1DCB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		153A6B831882586200D1DCB4 /* Build configuration list for PBXNativeTarget "librousTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +532,7 @@
 				153A6B851882586200D1DCB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

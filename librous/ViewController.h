@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SessionManager.h"
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
