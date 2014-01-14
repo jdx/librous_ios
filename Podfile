@@ -1,8 +1,9 @@
 platform :ios, '7.0'
 
-pod 'AFNetworking', '~> 2.0'
+pod 'AFNetworking'
 
 target 'librousTests' do
-  pod 'OHHTTPStubs', '~> 3.0'
-  pod 'TRVSMonitor', '~> 0.0.3'
+  pod 'Nocilla', git: 'https://github.com/timshadel/Nocilla'
+  pod 'TRVSMonitor'
+  pod 'Kiwi/XCTest'
 end

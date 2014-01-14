@@ -3,7 +3,8 @@
 
 @interface ApiService : AFHTTPSessionManager
 
-+ (ApiService *)sharedService;
++ (ApiService *)api;
++ (void)hijackSessionWithProtocolClasses:(NSArray *)protocolClasses;
 + (void)version:(void (^)(NSString *))success;
 
 @end

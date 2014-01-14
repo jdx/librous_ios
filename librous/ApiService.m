@@ -2,27 +2,42 @@
 
 @implementation ApiService
 
-#if TARGET_IPHONE_SIMULATOR
+#if LOCAL
 NSString *const host = @"http://librous.dev";
 #else
 NSString *const host = @"http://api.librous.com";
 #endif
 
-static ApiService *sharedService;
-
-+ (ApiService *)sharedService
++ (NSURL *)root
 {
-    if (sharedService == nil) {
-        NSURL *root = [NSURL URLWithString:host];
+    return [NSURL URLWithString:host];
+}
+
+static ApiService *_api;
++ (ApiService *)api
+{
+    if (_api == nil) {
+        NSLog(@"API running against %@", host);
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-        sharedService = [[super alloc] initWithBaseURL:root sessionConfiguration:config];
+        _api = [[super alloc] initWithBaseURL:self.root sessionConfiguration:config];
     }
-    return sharedService;
+    return _api;
+}
+
+/**
+ * (Used for testing)
+ */
++ (void)hijackSessionWithProtocolClasses:(NSArray *)protocolClasses
+{
+    NSURLSessionConfiguration *hijackedConfig = [self api].session.configuration;
+    hijackedConfig.protocolClasses = protocolClasses;
+    [_api invalidateSessionCancelingTasks:YES];
+    _api = [[super alloc] initWithBaseURL:self.root sessionConfiguration:hijackedConfig];
 }
 
 + (void)version:(void (^)(NSString *version))success
 {
-    [sharedService GET:@"/"
+    [_api GET:@"/"
             parameters:nil
                success:^(NSURLSessionDataTask *task, id responseObject) {
                    success(responseObject[@"version"]);
@@ -31,5 +46,6 @@ static ApiService *sharedService;
                    @throw [NSException exceptionWithName:@"HTTP Error" reason:[error description] userInfo:nil];
                }];
 }
+\
 
 @end

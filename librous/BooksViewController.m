@@ -6,7 +6,7 @@
 {
     [super viewDidLoad];
 	self.label.text = @"foobar";
-    [[ApiService sharedService] GET:@"/books"
+    [[ApiService api] GET:@"/books"
                              parameters:nil
                                 success:^(NSURLSessionDataTask *task, id responseObject) {
                                     self.label.text = responseObject[@"books"][0][@"title"];

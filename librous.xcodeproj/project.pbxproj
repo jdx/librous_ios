@@ -21,8 +21,9 @@
 		153A6B721882586200D1DCB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B4E1882586200D1DCB4 /* Foundation.framework */; };
 		153A6B731882586200D1DCB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A6B521882586200D1DCB4 /* UIKit.framework */; };
 		153A6B7B1882586200D1DCB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153A6B791882586200D1DCB4 /* InfoPlist.strings */; };
-		153A6B7D1882586200D1DCB4 /* SessionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153A6B7C1882586200D1DCB4 /* SessionManagerTests.m */; };
 		155875431882599C001B1A01 /* ApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 155875421882599C001B1A01 /* ApiService.m */; };
+		15CDFFC61885830B00C6011A /* GcovTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CDFFC51885830B00C6011A /* GcovTestObserver.m */; };
+		15CDFFC8188588F400C6011A /* ApiServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CDFFC7188588F400C6011A /* ApiServiceSpec.m */; };
 		3690D772603C45CCB852FC83 /* libPods-librousTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4393E048881E448CA46E0970 /* libPods-librousTests.a */; };
 		C09B660AF2874C6FBD00DB87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C4D657CC274071BF7DCD40 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -57,10 +58,11 @@
 		153A6B6F1882586200D1DCB4 /* librousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = librousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		153A6B701882586200D1DCB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		153A6B7A1882586200D1DCB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		153A6B7C1882586200D1DCB4 /* SessionManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionManagerTests.m; sourceTree = "<group>"; wrapsLines = 0; };
 		155875411882599C001B1A01 /* ApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiService.h; sourceTree = "<group>"; };
 		155875421882599C001B1A01 /* ApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiService.m; sourceTree = "<group>"; };
 		15BCFCE9188522C700AEC461 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		15CDFFC51885830B00C6011A /* GcovTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GcovTestObserver.m; sourceTree = "<group>"; };
+		15CDFFC7188588F400C6011A /* ApiServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiServiceSpec.m; sourceTree = "<group>"; };
 		24D1F5601B2B464983AD4492 /* Pods-librousTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-librousTests.xcconfig"; path = "Pods/Pods-librousTests.xcconfig"; sourceTree = "<group>"; };
 		4393E048881E448CA46E0970 /* libPods-librousTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-librousTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C4D657CC274071BF7DCD40 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,8 +160,9 @@
 		153A6B761882586200D1DCB4 /* librousTests */ = {
 			isa = PBXGroup;
 			children = (
-				153A6B7C1882586200D1DCB4 /* SessionManagerTests.m */,
 				153A6B771882586200D1DCB4 /* Supporting Files */,
+				15CDFFC7188588F400C6011A /* ApiServiceSpec.m */,
+				15CDFFC51885830B00C6011A /* GcovTestObserver.m */,
 			);
 			path = librousTests;
 			sourceTree = "<group>";
@@ -348,7 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				153A6B7D1882586200D1DCB4 /* SessionManagerTests.m in Sources */,
+				15CDFFC61885830B00C6011A /* GcovTestObserver.m in Sources */,
+				15CDFFC8188588F400C6011A /* ApiServiceSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +423,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +465,8 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -481,6 +489,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "librous/librous-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"LOCAL=1",
+				);
 				INFOPLIST_FILE = "librous/librous-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -514,10 +527,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "librous/librous-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "librousTests/librousTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
