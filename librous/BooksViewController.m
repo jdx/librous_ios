@@ -1,28 +1,17 @@
-//
-//  ViewController.m
-//  librous
-//
-//  Created by Jeff Dickey on 1/11/14.
-//  Copyright (c) 2014 dickeyxxx. All rights reserved.
-//
+#import "BooksViewController.h"
 
-#import "ViewController.h"
-
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
+@implementation BooksViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	self.label.text = @"foobar";
-    [[SessionManager sharedManager] GET:@"/"
+    [[ApiService sharedService] GET:@"/books"
                              parameters:nil
                                 success:^(NSURLSessionDataTask *task, id responseObject) {
-                                    self.label.text = responseObject[0];
-                                } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                    self.label.text = responseObject[@"books"][0][@"title"];
+                                }
+                                failure:^(NSURLSessionDataTask *task, NSError *error) {
                                     NSLog(@"%@", error);
                                 }];
 }

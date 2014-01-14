@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SessionManager.h"
+#import "ApiService.h"
 
-@interface ViewController : UIViewController
+@interface BooksViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
